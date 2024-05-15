@@ -27,11 +27,11 @@ import { GaleryModule } from './galery/galery.module';
     }),
     SequelizeModule.forRoot({
       dialect: 'postgres',
-      host: config.DB_HOST,
-      port: config.DB_PORT,
-      username: config.DB_USER,
-      password: config.DB_PASS,
-      database: config.DB_NAME,
+      host: config.PG_HOST,
+      port: config.PG_PORT,
+      username: config.PG_USER,
+      password: config.PG_PASS,
+      database: config.PG_DB,
       autoLoadModels: true,
     }),
     ServeStaticModule.forRoot({
