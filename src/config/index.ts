@@ -18,11 +18,11 @@ export type ConfigType = {
 
 export const config: ConfigType = {
   PORT: Number(process.env.PORT) as unknown as number,
-  PG_HOST: process.env.DB_HOST as unknown as string,
-  PG_PORT: Number(process.env.DB_PORT) as unknown as number,
-  PG_USER: process.env.DB_USER as unknown as string,
-  PG_PASS: process.env.DB_PASS as unknown as string,
-  PG_DB: process.env.DB_NAME as unknown as string,
+  PG_HOST: process.env.PG_HOST as unknown as string,
+  PG_PORT: Number(process.env.PG_PORT) as unknown as number,
+  PG_USER: process.env.PG_USER as unknown as string,
+  PG_PASS: process.env.PG_PASS as unknown as string,
+  PG_DB: process.env.PG_DB as unknown as string,
   ACCESS_TOKEN_KEY: process.env.ACCESS_TOKEN_KEY as unknown as string,
   ACCESS_TOKEN_TIME: process.env.ACCESS_TOKEN_TIME as unknown as string,
   APP_LOGS_PATH: process.env.APP_LOGS_PATH as unknown as string,
